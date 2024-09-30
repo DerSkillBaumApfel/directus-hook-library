@@ -27,19 +27,6 @@ type ContextReallyDeleteUnused = {
     anyCollections: AnyCollection[];
 };
 
-/** maps the array elements to objects of type JunctionCollection with a default `foreignKey` field of `“item”` and a default `foreignCollection` field of `“collection”`  */
-export const toJunctionCollectionM2A = (name: string): JunctionCollection => ({
-    name,
-    foreignKey: "item",
-    foreignCollection: "collection",
-});
-
-/** maps the array elements to objects of type AnyCollection with a default `key` field of `“id”`  */
-export const toAnyCollectionM2A = (name: string): AnyCollection => ({
-    name,
-    key: "id",
-});
-
 /**
  * Go through all `junctionCollections` and search for the `relatedCollection` items to delete. If found, prevent deletion.
  *
