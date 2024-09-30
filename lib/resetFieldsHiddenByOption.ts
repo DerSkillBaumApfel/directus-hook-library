@@ -1,5 +1,4 @@
-import type { RegisterFunctions } from "./types";
-import type { HookExtensionContext } from "@directus/extensions";
+import type { HookExtensionContext, RegisterFunctions } from "@directus/extensions";
 
 type ResetGroup = {
     not: string[];

@@ -1,9 +1,8 @@
 // This deletes all items from a collection `oneCollection`, where all (reverse) related fields `manyField of manyCollections` are null
 // This makes sense for a M2O relation that is used like a O2O relation
 
-import type { HookExtensionContext } from "@directus/extensions";
+import type { HookExtensionContext, RegisterFunctions } from "@directus/extensions";
 import type { EventContext } from "@directus/types";
-import type { RegisterFunctions } from "./types";
 
 type ManyField = string;
 
