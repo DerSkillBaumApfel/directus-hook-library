@@ -1,21 +1,24 @@
 import deleteUnusedM2OItems from "./lib/deleteUnusedM2OItems";
-import {
-    toJunctionCollectionM2A,
-    preventDeletingM2AItems,
-    deleteUnusedM2AItems,
-    toAnyCollectionM2A,
-} from "./lib/deletingM2AItems";
 import replaceDeletedUserReferences from "./lib/replaceDeletedUserReferences";
 import resetFieldsHiddenByOption from "./lib/resetFieldsHiddenByOption";
 import setProjectSettingsFromEnvVars from "./lib/setProjectSettingsFromEnvVars";
 
 export {
+    //// M2O HOOKS //////////////////////////////////
     deleteUnusedM2OItems,
-    toJunctionCollectionM2A,
-    preventDeletingM2AItems,
-    deleteUnusedM2AItems,
-    toAnyCollectionM2A,
+
+    //// UTIL HOOKS //////////////////////////////////
     replaceDeletedUserReferences,
     resetFieldsHiddenByOption,
     setProjectSettingsFromEnvVars,
 };
+
+//// M2A OPERATION TYPES //////////////////////////////////
+export * from './lib/m2a/shared/types';
+
+//// M2A HOOKS //////////////////////////////////
+export * from "./lib/m2a/itemRelationCascade";
+export * from "./lib/m2a/relationItemCascade";
+
+    //// HELPERS //////////////////////////////////
+export { toAnyCollectionM2A, toJunctionCollectionM2A } from "./lib/m2a/shared/helper-functions";
