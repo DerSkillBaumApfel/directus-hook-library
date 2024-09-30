@@ -1,4 +1,5 @@
 import { createError } from "@directus/errors";
+import { AnyCollection, JunctionCollection } from "./types";
 
 /** maps the array elements to objects of type JunctionCollection with a default `foreignKey` field of `“item”` and a default `foreignCollection` field of `“collection”`  */
 export const toJunctionCollectionM2A = (collectionName: string): JunctionCollection => ({
