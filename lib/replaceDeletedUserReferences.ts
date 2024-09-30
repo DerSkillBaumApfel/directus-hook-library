@@ -1,7 +1,6 @@
 // This replaces the reference to a deleted user with a reference to the current user in the directus_files collection.
 
-import type { HookExtensionContext } from "@directus/extensions";
-import type { RegisterFunctions } from "./types";
+import type { HookExtensionContext,RegisterFunctions } from "@directus/extensions";
 
 export default function (
     { filter }: RegisterFunctions,

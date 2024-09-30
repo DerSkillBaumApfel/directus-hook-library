@@ -1,7 +1,6 @@
 import { createError } from "@directus/errors";
-import type { HookExtensionContext } from "@directus/extensions";
+import type { HookExtensionContext, RegisterFunctions } from "@directus/extensions";
 import type { EventContext, PrimaryKey } from "@directus/types";
-import type { RegisterFunctions } from "./types";
 
 type JunctionCollection = {
     name: string;
