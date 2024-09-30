@@ -9,26 +9,26 @@ export type AnyCollection = {
     primaryKeyFieldName: string;
 };
 
-export type PreventRelationDeleteConfig = {
-    watchedAnyCollections: AnyCollection[];
+export type M2AConfig = {
+    anyCollections: AnyCollection[];
     junctionCollection: JunctionCollection;
 };
 
-export type PreventItemDeleteConfig = {
-    /** collections which items should not be deleted, if they are related to a junctionCollection */
-    anyCollection: AnyCollection;
-    /** collections to search in */
-    watchedJunctionCollections: JunctionCollection[];
-};
+// export type PreventItemDeleteConfig = {
+//     /** collections which items should not be deleted, if they are related to a junctionCollection */
+//     anyCollection: AnyCollection;
+//     /** collections to search in */
+//     watchedJunctionCollections: JunctionCollection[];
+// };
 
-export type UnusedRelationDeleteConfig = {
-    junctionCollection: JunctionCollection;
-    watchedAnyCollections: AnyCollection[];
-};
+// export type DeleteUnusedConfig = {
+//     junctionCollection: JunctionCollection;
+//     anyCollections: AnyCollection[];
+// };
 
-export type UnusedItemDeleteConfig = {
-    /** collections to search in */
-    watchedJunctionCollections: JunctionCollection[];
-    /** collections that potentially have unused items */
-    anyCollection: AnyCollection;
-};
+// export type DeleteUnusedConfig = {
+//     /** collections to search in */
+//     watchedJunctionCollections: JunctionCollection[];
+//     /** collections that potentially have unused items */
+//     anyCollection: AnyCollection;
+// };

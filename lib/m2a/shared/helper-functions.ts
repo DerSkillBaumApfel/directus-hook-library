@@ -1,14 +1,19 @@
 import { createError } from "@directus/errors";
 import { AnyCollection, JunctionCollection } from "./types";
 
-/** maps the array elements to objects of type JunctionCollection with a default `foreignKey` field of `“item”` and a default `foreignCollection` field of `“collection”`  */
+/** Maps collection names to to objects of type JunctionCollection.\
+ * Uses default directus settings:\
+ *  `foreignKeyFieldName` = `"item"`\
+ *  `foreignCollection` =`"collection"`  */
 export const toJunctionCollectionM2A = (collectionName: string): JunctionCollection => ({
     collectionName,
     foreignKeyFieldName: "item",
     itemDiscriminatorFieldName: "collection",
 });
 
-/** maps the array elements to objects of type AnyCollection with a default `key` field of `“id”`  */
+/** Maps collection names to to objects of type AnyCollection.\
+ * Uses default directus settings:\
+ *  `primaryKeyFieldName` =`"id"`  */
 export const toAnyCollectionM2A = (collectionName: string): AnyCollection => ({
     collectionName,
     primaryKeyFieldName: "id",
