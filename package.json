@@ -1,12 +1,22 @@
 {
     "name": "directus-hook-library",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "A collection of customizable hooks for Directus",
     "license": "GPL-3.0",
     "author": {
         "email": "dev@formfcw.com",
         "name": "formfcw"
     },
+    "contributors": [
+        {
+            "name": "DerSkillBaumApfel",
+            "email": "office@heureka.education"
+        },
+        {
+            "email": "dev@formfcw.com",
+            "name": "formfcw"
+        }
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {
