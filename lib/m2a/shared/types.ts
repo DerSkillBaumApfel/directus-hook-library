@@ -1,12 +1,12 @@
 type JunctionCollection = {
-    name: string;
-    foreignKey: string;
-    foreignCollection: string;
+    collectionName: string;
+    foreignKeyFieldName: string;
+    itemDiscriminatorFieldName: string;
 };
 
 type AnyCollection = {
-    name: string;
-    key: string;
+    collectionName: string;
+    primaryKeyFieldName: string;
 };
 
 type PreventRelationDeleteConfig = {
