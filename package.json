@@ -42,7 +42,8 @@
     "homepage": "https://github.com/DerSkillBaumApfel/directus-hook-library#readme",
     "scripts": {
         "build-and-publish": "tsc && npm publish",
-        "build": "tsc"
+        "build": "tsc",
+        "prepare": "npm run build"
     },
     "devDependencies": {
         "@directus/errors": "^2.0.0",
