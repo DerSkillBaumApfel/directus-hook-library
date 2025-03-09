@@ -21,7 +21,7 @@
     "types": "dist/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/formfcw/directus-hook-library.git"
+        "url": "git+https://github.com/DerSkillBaumApfel/directus-hook-library.git"
     },
     "keywords": [
         "directus",
@@ -37,9 +37,9 @@
         "replace-deleted-user-references"
     ],
     "bugs": {
-        "url": "https://github.com/formfcw/directus-hook-library/issues"
+        "url": "https://github.com/DerSkillBaumApfel/directus-hook-library/issues"
     },
-    "homepage": "https://github.com/formfcw/directus-hook-library#readme",
+    "homepage": "https://github.com/DerSkillBaumApfel/directus-hook-library#readme",
     "scripts": {
         "build-and-publish": "tsc && npm publish",
         "build": "tsc"
