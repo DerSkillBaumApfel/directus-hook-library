@@ -1,12 +1,22 @@
 {
     "name": "directus-hook-library",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "A collection of customizable hooks for Directus",
     "license": "GPL-3.0",
     "author": {
         "email": "dev@formfcw.com",
         "name": "formfcw"
     },
+    "contributors": [
+        {
+            "name": "DerSkillBaumApfel",
+            "email": "office@heureka.education"
+        },
+        {
+            "email": "dev@formfcw.com",
+            "name": "formfcw"
+        }
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {
@@ -35,15 +45,15 @@
         "build": "tsc"
     },
     "devDependencies": {
-        "@directus/errors": "^1.0.0",
-        "@directus/extensions": "^2.0.1",
-        "@directus/types": "^11.0.1",
-        "@types/node": "^22.7.2",
-        "typescript": "^5.6.2"
+        "@directus/errors": "^2.0.0",
+        "@directus/extensions": "^3.0.3",
+        "@directus/types": "^13.0.0",
+        "@types/node": "^22.13.10",
+        "typescript": "^5.8.2"
     },
     "peerDependencies": {
-        "@directus/errors": "^0.2.0",
-        "@directus/extensions": "^0.1.0",
-        "@directus/types": "^11.0.1"
+        "@directus/errors": "^2.0.0",
+        "@directus/extensions": "^3.0.3",
+        "@directus/types": "^13.0.0"
     }
 }
